@@ -24,8 +24,8 @@ public class Sketch extends PApplet {
 
     fill(0);
     textSize(30);
-    text(hr, 200, 200);
-    text(min, 200, 225);
+    text(hr, 0, 100);
+    text(min, 0, 130);
 
     // Drawing an eclipse in random locations
     float ellipseX = random(0, 200);
@@ -45,14 +45,19 @@ public class Sketch extends PApplet {
    * Called repeatedly, anything drawn to the screen goes here
    */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+	
+  // triangle (house roof)
+  triangle(110,250, 200, 100, 315, 250);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
-  }
+
+  //rectangle (base for house)
+  fill(200,125, 100);
+  size(600, 800);
+  stroke(153);
+  rect(110, 250, 200, 200);
   
-  // define other methods down here.
+  // define other methods down here.}
+
+}
+
 }
