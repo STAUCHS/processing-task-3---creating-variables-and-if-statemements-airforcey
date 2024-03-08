@@ -21,14 +21,13 @@ public class Sketch extends PApplet {
   public void setup() {
     background(210, 255, 173);
 
-    rectX = random(60,20);
-    rectY = random(60,20);
+    rectX = random(0,600);
+    rectY = random(0,800);
     
 
     triangleX = random(0, 600);
     triangleY = random(0, 800);
     triangleZ = random(0, 800);
-    triangle(triangleX, triangleY, triangleX, triangleY);
     // Drawing an eclipse in random locations
 
     // float rectWidth = random(10, 50);
@@ -58,15 +57,14 @@ public class Sketch extends PApplet {
   public void draw() {
 	
     // triangle (house roof)
-    triangle(triangleX, triangleY, triangleX + 35, triangleY - 35, triangleX - 57, 250);
+    triangle(triangleX, triangleY, triangleX + 100, triangleY - 50, triangleX + 200, triangleY);
 
     //rectangle (base for house)
     fill(200, 125, 100);
-    size(600, 800);
     stroke(153);
-    rect(110, 250, 200, 200);
+    rect(triangleX, triangleY, 200, 200);
   
-  // define other methods down here.}
+  // define other methods down here.
 
   }
 
